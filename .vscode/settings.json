@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "LetGoInitial.sln"
+    "dotnet.defaultSolution": "LetGoProjectDevelopment.sln"
 }
