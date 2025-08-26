@@ -1,0 +1,12 @@
+﻿title: Test
+---
+<<emotion Davor Happy>>
+Davor:I am happy
+<<emotion Davor Sad>>
+Davor: Now I'm sad
+<<emotion Davor Mad>>
+Davor: Now im mad!
+
+<<emotion  Elaina Normal>>
+Elaina: Im the one talking now, and im pink for some reason
+===
