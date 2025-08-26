@@ -1,9 +1,11 @@
 ﻿title: Test
 ---
+<<switch_camera Closeup1>>
 <<emotion Davor Happy>>
-Davor:I am happy
+Davor:I am happy, and you can see it up close
 <<emotion Davor Sad>>
-Davor: Now I'm sad
+<<switch_camera Scene1>>
+Davor: Now I'm sad, and you can walk around the map
 <<emotion Davor Mad>>
 Davor: Now im mad!
 
