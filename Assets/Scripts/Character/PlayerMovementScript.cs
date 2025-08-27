@@ -5,9 +5,11 @@ public class PlayerMovementScript : MonoBehaviour
 {
     public float speed = 5f;
     private CharacterController controller;
-    private InputSystem_Actions inputActions; // Supondo que você criou um InputActions chamado PlayerInputActions
+    private InputSystem_Actions inputActions; 
 
-    public Transform playerMesh; // Arrasta aqui o GameObject visual do player no Inspector
+    public Transform playerMesh;
+
+    public bool movementLocked = false;
 
     private void Awake()
     {
@@ -28,11 +30,13 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void Update()
     {
+        if (movementLocked)
+            return;
         Vector2 moveInput = inputActions.Player.Move.ReadValue<Vector2>();
         Vector3 move = new Vector3(-moveInput.y, 0, moveInput.x) * speed * Time.deltaTime;
         controller.Move(move);
 
-        // Roda a mesh se houver movimento
+     
         Vector3 moveDir = new Vector3(-moveInput.y, 0, moveInput.x);
         if (moveDir.sqrMagnitude > 0.01f)
         {

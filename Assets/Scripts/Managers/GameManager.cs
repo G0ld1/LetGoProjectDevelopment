@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-
-
     public void SwitchCamera(string cameraName)
     {
         var allVCams = FindObjectsByType<CinemachineCamera>(FindObjectsSortMode.None);
@@ -32,5 +30,12 @@ public class GameManager : MonoBehaviour
             npc.transform.position = position;
     }
 
+    // Exemplo para o GameManager
+    public void LockPlayerMovement(bool locked)
+    {
+        var player = FindFirstObjectByType<PlayerMovementScript>();
+        if (player != null)
+            player.movementLocked = locked;
+    }
 
 }

@@ -1,0 +1,24 @@
+﻿title: Intro
+---
+<<lock_player>>
+<<switch_camera Closeup1>>
+Davor: We are really doing this, huh?
+Elaina: Don't tell me you are just now thinking this through.. Aren't you curious as to what that was too?
+<<switch_camera Scene1>>
+<<wait  1>>
+<<move_npc_to Elaina 5.17700005 2.01600003 26.8759995>>
+
+Elaina: Oh! There it is again! We are in the right track. Come on silly, or I'll leave you behiiind~
+<<camera_look_at ElainaStopPoint>>
+
+
+
+Davor: Wait!! Its starting to get dark, and the forest can be dangerous!
+
+Davor: <i> Come on Elaina... What if a bear jumps out at me here </i>
+
+Davor: <i> Damn it. </i>
+<<wait 1>>
+Davor: <i> Better catch up to her. </i>
+<<unlock_player>>
+===
